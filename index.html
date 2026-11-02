@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vibe & Brew | Custom Drink Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>☕ Vibe & Brew</h1>
+        <p class="subtitle">Select your current vibe, and let us brew your perfect match.</p>
+
+        <!-- Question 1: Mood -->
+        <div class="question-group">
+            <label>1. What is your current mood?</label>
+            <div class="options">
+                <button type="button" class="btn-option" onclick="selectMood('focus', this)">🚀 Focus / Study</button>
+                <button type="button" class="btn-option" onclick="selectMood('chill', this)">🛋️ Chill / Relax</button>
+            </div>
+        </div>
+
+        <!-- Question 2: Base -->
+        <div class="question-group">
+            <label>2. Choose your base:</label>
+            <div class="options">
+                <button type="button" class="btn-option" onclick="selectBase('coffee', this)">☕ Coffee</button>
+                <button type="button" class="btn-option" onclick="selectBase('tea', this)">🍵 Tea</button>
+            </div>
+        </div>
+
+        <!-- Generate Button -->
+        <button id="generate-btn" onclick="generateDrink()">Brew My Drink 🪄</button>
+
+        <!-- Result Section (Stateful) -->
+        <div id="result-card" class="hidden">
+            <img id="drink-img" src="" alt="Custom Drink">
+            <h2 id="drink-title">Your Drink Name</h2>
+            <p id="drink-desc">Description goes here...</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

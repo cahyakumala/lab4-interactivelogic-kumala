@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vibe & Brew | Custom Drink Generator</title>
+    <!-- Link external CSS stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,7 +13,7 @@
         <h1>☕ Vibe & Brew</h1>
         <p class="subtitle">Select your current vibe, and let us brew your perfect match.</p>
 
-        <!-- Question 1: Mood -->
+        <!-- Question 1: Mood Selection -->
         <div class="question-group">
             <label>1. What is your current mood?</label>
             <div class="options">
@@ -21,7 +22,7 @@
             </div>
         </div>
 
-        <!-- Question 2: Base -->
+        <!-- Question 2: Base Selection -->
         <div class="question-group">
             <label>2. Choose your base:</label>
             <div class="options">
@@ -30,10 +31,10 @@
             </div>
         </div>
 
-        <!-- Generate Button -->
+        <!-- Action Button to Trigger Conditional Logic -->
         <button id="generate-btn" onclick="generateDrink()">Brew My Drink 🪄</button>
 
-        <!-- Result Section (Stateful) -->
+        <!-- Result Card Section (Stateful Display) -->
         <div id="result-card" class="hidden">
             <img id="drink-img" src="" alt="Custom Drink">
             <h2 id="drink-title">Your Drink Name</h2>
@@ -41,6 +42,7 @@
         </div>
     </div>
 
+    <!-- Link external JavaScript file -->
     <script src="script.js"></script>
 </body>
 </html>
